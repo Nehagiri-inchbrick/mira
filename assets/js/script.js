@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
         // Add subtle pulse highlight effect
         target.style.transition = 'box-shadow 0.4s ease, transform 0.4s ease';
-        target.style.boxShadow = '0 0 0 4px #9b7424, 0 20px 50px rgba(155, 116, 36, 0.4)';
-        target.style.transform = 'scale(1.02)';
+        target.style.boxShadow = '0 0 0 3px #b39352, 0 24px 60px rgba(20, 40, 30, 0.25)';
+        target.style.transform = 'scale(1.015)';
         setTimeout(() => {
           target.style.boxShadow = '';
           target.style.transform = '';
