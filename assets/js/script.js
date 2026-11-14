@@ -44,8 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const fullName = document.getElementById('fullName').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
-      const residenceType = document.getElementById('residenceType').value;
-      const notes = document.getElementById('notes').value.trim();
+      const residenceType = document.getElementById('residenceType') ? document.getElementById('residenceType').value : '';
+      const notesEl = document.getElementById('notes');
+      const notes = notesEl ? notesEl.value.trim() : '';
 
       if (!fullName || !email || !phone) {
         alert('Please fill in all required fields.');

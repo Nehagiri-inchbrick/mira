@@ -466,21 +466,55 @@ button, input, select, textarea {
   font-weight: 300;
 }
 
-/* Explore Homes Golden CTA Button */
+/* Authentic Key Stats Pills from Brochure */
+.banner-key-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 4px 0 8px;
+}
+
+.key-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #f7fafc;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.key-stat-pill i {
+  color: #dfb249;
+  font-size: 0.95rem;
+}
+
+/* Explore Homes Golden CTA Button & Secondary */
 .banner-cta-row {
-  margin-top: 8px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .btn-explore-homes {
   background: linear-gradient(135deg, #e5ba55 0%, #d19f35 50%, #c49129 100%);
   color: #1a1a1a;
-  padding: 14px 34px;
+  padding: 13px 32px;
   border-radius: var(--radius-pill);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   box-shadow: 0 8px 24px rgba(209, 159, 53, 0.45);
   transition: var(--transition);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -493,69 +527,131 @@ button, input, select, textarea {
   color: #000;
 }
 
-/* ==========================================================================
-   RIGHT COLUMN: THE FLOATING HIGHLIGHTED ENQUIRY CARD (EXACT REPLICA)
-   ========================================================================== */
-.banner-card-right {
-  position: relative;
-  background: #ffffff;
-  border-radius: 26px;
-  padding: 38px 32px 28px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-  max-width: 440px;
-  margin-left: auto;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-}
-
-/* Overlapping Top Tab Pill: 🏠 Enquire Now */
-.enquire-now-top-pill {
-  position: absolute;
-  top: -20px;
-  right: 28px;
-  background: linear-gradient(135deg, #f0c356 0%, #daa438 100%);
-  color: #1a1b1e;
-  font-weight: 700;
-  font-size: 0.9rem;
-  padding: 10px 22px;
-  border-radius: var(--radius-pill);
+.btn-banner-secondary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 8px 20px rgba(218, 164, 56, 0.55);
-  border: 2px solid #ffffff;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: var(--transition);
 }
 
-.enquire-now-top-pill i {
-  font-size: 1rem;
-  color: #111;
+.btn-banner-secondary:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-.enquiry-card-body {
-  display: flex;
-  flex-direction: column;
+.btn-banner-secondary i {
+  color: #dfb249;
 }
 
-.card-heading {
-  font-family: var(--font-sans);
+/* ==========================================================================
+   RIGHT COLUMN: PROFESSIONAL ARCHITECTURAL LUXURY ENQUIRY FORM
+   ========================================================================== */
+.banner-card-right {
+  position: relative;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 32px 28px 24px;
+  box-shadow: 0 26px 70px rgba(4, 18, 30, 0.42), 0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+  max-width: 440px;
+  margin-left: auto;
+  border: 1px solid rgba(205, 163, 68, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.banner-card-right:hover {
+  box-shadow: 0 32px 80px rgba(4, 18, 30, 0.5), 0 0 0 1px rgba(205, 163, 68, 0.5) inset;
+}
+
+/* Card Header & Status Badge */
+.form-luxury-header {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.form-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(26, 74, 53, 0.08);
+  border: 1px solid rgba(26, 74, 53, 0.22);
+  padding: 5px 12px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.status-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #1a7a4c;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(26, 122, 76, 0.2);
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { box-shadow: 0 0 0 0 rgba(26, 122, 76, 0.6); }
+  70% { box-shadow: 0 0 0 6px rgba(26, 122, 76, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(26, 122, 76, 0); }
+}
+
+.status-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #1a4a35;
+}
+
+.banner-card-right .card-heading {
+  font-family: var(--font-serif);
   font-size: 1.55rem;
-  font-weight: 800;
-  color: #11141a;
+  font-weight: 600;
+  color: #141c22;
   line-height: 1.2;
   margin-bottom: 4px;
+  letter-spacing: -0.3px;
 }
 
-.card-subheading {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #444750;
-  margin-bottom: 22px;
+.banner-card-right .card-subheading {
+  font-size: 0.84rem;
+  color: #555f69;
+  line-height: 1.4;
+  margin-bottom: 0;
 }
 
-/* Form inputs matching the exact icons & rounded border in reference image */
+/* Professional Input Fields */
 .banner-enquiry-form {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 11px;
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field-label {
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #3b454e;
 }
 
 .input-with-icon {
@@ -566,101 +662,126 @@ button, input, select, textarea {
 
 .input-with-icon i {
   position: absolute;
-  left: 18px;
-  color: #636670;
-  font-size: 1rem;
+  left: 14px;
+  color: #8c7340;
+  font-size: 0.92rem;
   pointer-events: none;
+  transition: color 0.25s ease;
 }
 
 .input-with-icon input,
 .input-with-icon select {
   width: 100%;
-  padding: 13px 18px 13px 46px;
-  background: #ffffff;
-  border: 1.5px solid #d9dcde;
-  border-radius: var(--radius-md);
-  font-size: 0.9rem;
-  color: #22252a;
+  padding: 10px 14px 10px 38px;
+  background: #fbf9f5;
+  border: 1px solid #dcd3c4;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: #1a2228;
   outline: none;
-  transition: var(--transition);
+  transition: all 0.25s ease;
 }
 
 .input-with-icon input::placeholder {
-  color: #6c707a;
+  color: #8c939b;
   font-weight: 400;
 }
 
 .input-with-icon input:focus,
 .input-with-icon select:focus {
-  border-color: #dfb249;
-  box-shadow: 0 0 0 3px rgba(223, 178, 73, 0.2);
+  background: #ffffff;
+  border-color: #bfa15f;
+  box-shadow: 0 0 0 3px rgba(191, 161, 95, 0.18);
+}
+
+.input-with-icon input:focus + i,
+.input-with-icon:focus-within i {
+  color: #bfa15f;
 }
 
 .input-with-icon.select-wrapper select {
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
+  color: #1a2228;
 }
 
 .input-with-icon .arrow-indicator {
   left: auto;
-  right: 18px;
-  font-size: 0.8rem;
-  color: #6c707a;
+  right: 14px;
+  font-size: 0.75rem;
+  color: #7b838c;
 }
 
-/* Red Request Callback Button (Identical to reference!) */
+/* Professional Executive Submit Button (Deep Forest Green with Gold Sheen) */
 .btn-request-callback {
-  background: var(--color-crimson-gradient);
+  background: linear-gradient(135deg, #133a2a 0%, #0d271c 100%);
   color: #ffffff;
-  border: none;
-  padding: 14px 24px;
-  border-radius: var(--radius-md);
-  font-size: 1.05rem;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-size: 0.86rem;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  box-shadow: 0 8px 24px rgba(184, 20, 36, 0.4);
-  transition: var(--transition);
-  margin-top: 6px;
+  box-shadow: 0 8px 22px rgba(13, 39, 28, 0.35);
+  transition: all 0.3s ease;
+  margin-top: 4px;
 }
 
 .btn-request-callback:hover {
-  background: linear-gradient(135deg, #d6192d 0%, #b81424 100%);
+  background: linear-gradient(135deg, #1c523b 0%, #103324 100%);
+  border-color: #dfb249;
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(184, 20, 36, 0.55);
+  box-shadow: 0 12px 28px rgba(13, 39, 28, 0.5);
+  color: #fce8a6;
 }
 
-/* 100% Privacy Assured */
-.privacy-assured-badge {
+.btn-request-callback i {
+  font-size: 0.82rem;
+  color: #dfb249;
+  transition: transform 0.25s ease;
+}
+
+.btn-request-callback:hover i {
+  transform: translateX(4px);
+}
+
+/* Professional Trust Footprint */
+.form-trust-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-top: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #ede8de;
 }
 
-.privacy-assured-badge .p-line {
-  flex-grow: 1;
-  height: 1px;
-  background: #e2e4e8;
-}
-
-.privacy-assured-badge .p-content {
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: #696e79;
-  display: flex;
+.trust-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #555e67;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
-.privacy-assured-badge .p-content i {
-  color: #9b7424;
+.trust-badge i {
+  color: #1a4a35;
+  font-size: 0.76rem;
+}
+
+.trust-sep {
+  color: #c7c0b0;
+  font-size: 0.7rem;
 }
 
 /* ==========================================================================
