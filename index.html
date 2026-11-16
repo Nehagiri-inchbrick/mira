@@ -1,163 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mira Verde | Luxury Hillside Residences in Tbilisi | Mira Developments</title>
-  <meta name="description" content="Mira Verde in Tbilisi Hills: Georgia's first multi-branded community. 600 branded residences, 80 townhouses, 104 villas, 18-hole championship golf course, and 8% guaranteed ROI for 10 years.">
+  <title>Mira Verde | Where Nature, Luxury, and Legacy Meet | Tbilisi Hills</title>
+  <meta name="description"
+    content="Mira Verde in Tbilisi Hills: Georgia's premier multi-branded community. 600 branded residences, 80 townhouses, 104 villas, an 18-hole championship golf course, and a target 8% ROI over 10 years.">
   <link rel="icon" type="image/x-icon" href="assets/images/clean/cantilever_villas.jpg">
-  
-  <!-- Font Awesome CDN -->
+
+  <!-- Font Awesome 6 CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
+
+  <!-- Google Fonts: Playfair Display, Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <!-- Custom Design System Stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
   <!-- =========================================================================
-       SECTION 1: HERO BANNER (PURE ARCHITECTURAL LUXURY)
+       HERO BANNER: EXACT LUXURY EDITORIAL DESIGN WITH RIGHT-SIDE ENQUIRY FORM
        ========================================================================= -->
-  <section class="banner-hero-exact" id="overview">
-    
-    <!-- Architectural Background Visual -->
-    <div class="banner-bg-wrapper">
-      <img src="assets/images/clean/cantilever_villas.jpg" alt="Mira Verde Hillside Residences Overlooking Tbilisi" class="banner-bg-img">
-      <div class="banner-overlay-gradient"></div>
+  <header class="ogw-hero-banner" id="overview">
+
+    <!-- Full-Bleed Architectural Villa at Golden Hour Background -->
+    <div class="ogw-bg-wrapper">
+      <img src="assets/images/clean/cantilever_villas.jpg" alt="Mira Verde Luxury Hillside Residences in Tbilisi"
+        class="ogw-bg-img">
+      <div class="ogw-overlay-vignette"></div>
     </div>
 
-    <div class="container banner-inner">
-      
-      <!-- Top Brand Row: Inch & Brick Realty -->
-      <div class="banner-top-brand">
-        <a href="#" class="inchbrick-logo-link" aria-label="Inch & Brick Realty">
-          <img src="assets/images/inchbrick-logo.png" alt="Inch & Brick Realty" class="banner-inchbrick-logo">
-        </a>
-      </div>
+    <!-- Floating Top Navigation Bar (Only Partner Logo on Left, Action Pills on Right) -->
+    <nav class="ogw-top-nav">
+      <div class="ogw-nav-container">
 
-      <!-- Top Split Grid -->
-      <div class="banner-main-grid">
-        
-        <!-- Left: Editorial Headline & Overview -->
-        <div class="banner-content-left">
-          
-          <div class="banner-eyebrow">
-            MIRA DEVELOPMENTS &bull; TBILISI HILLS, GEORGIA
-          </div>
-
-          <h1 class="banner-title-grand">
-            Where the Hills<br>
-            Meet the City
-          </h1>
-
-          <p class="banner-subtitle">
-            Georgia's premier master-planned hillside community. An exclusive address of 600 branded residences, 80 forest townhouses, and 104 panoramic villas overlooking Tbilisi.
-          </p>
-
-          <div class="banner-meta-row">
-            <span class="meta-item">10-Year 8% Guaranteed ROI</span>
-            <span class="meta-sep">&bull;</span>
-            <span class="meta-item">18-Hole Championship Golf</span>
-            <span class="meta-sep">&bull;</span>
-            <span class="meta-item">100% Freehold Ownership</span>
-          </div>
-
-          <div class="banner-cta-row">
-            <a href="#collection" class="btn-primary-architectural">
-              <span>Explore Residences</span>
-              <i class="fa-solid fa-arrow-down-long"></i>
-            </a>
-            <a href="#investment" class="btn-text-link">
-              <span>View 10-Yr ROI Model &rarr;</span>
-            </a>
-          </div>
-
+        <!-- Left: Authorized Partner Inch & Brick Realty Logo Only -->
+        <div class="ogw-nav-left">
+          <a href="#overview" class="ogw-partner-link" aria-label="Inch & Brick Realty">
+            <img src="assets/images/inchbrick-logo.png" alt="Inch & Brick Realty" class="ogw-partner-logo">
+          </a>
         </div>
 
-        <!-- Right: Professional Architectural Enquiry Card -->
-        <div class="banner-card-right" id="topEnquiryCard">
-          
-          <div class="card-header-clean">
-            <span class="card-tag">OFFICIAL ALLOCATION</span>
-            <h2 class="card-heading">Register Priority Interest</h2>
-            <p class="card-subheading">Request floor plans, pricing &amp; 10-year guaranteed ROI schedule.</p>
+        <!-- Right: Action Pill Buttons -->
+        <div class="ogw-nav-right">
+          <a href="#topEnquiryCard" class="ogw-btn-pill-white js-scroll-to-enquiry">
+            Plan your visit
+          </a>
+          <a href="#topEnquiryCard" class="ogw-btn-pill-gold js-scroll-to-enquiry">
+            <i class="fa-solid fa-house"></i>
+            <span>Availability</span>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Center: Main Hero Grid (Headline on Left, Enquiry Form on Right) -->
+    <div class="ogw-hero-content">
+      <div class="container">
+        <div class="ogw-hero-grid">
+
+          <!-- Left Column: Editorial Headline & Overview -->
+          <div class="ogw-headline-box">
+
+            <div class="ogw-brand-eyebrow">
+              MIRA VERDE &bull; TBILISI HILLS, GEORGIA
+            </div>
+
+            <h1 class="ogw-headline-serif">
+              Where <em>nature</em>, <em>luxury</em>,<br>
+              and <em>legacy</em> meet
+            </h1>
+
+            <p class="ogw-subhead-text">
+              Above the city. Close to nature.
+            </p>
+
+            <div class="ogw-feature-tags">
+              <span class="f-tag">Target 8% ROI over 10 Years</span>
+              <span class="f-dot">&bull;</span>
+              <span class="f-tag">18-Hole Championship Golf</span>
+              <span class="f-dot">&bull;</span>
+              <span class="f-tag">100% Freehold Ownership</span>
+            </div>
+
+            <div class="ogw-hero-links">
+              <a href="#collection" class="btn-hero-explore">
+                <span>Explore Residences</span>
+                <i class="fa-solid fa-arrow-down-long"></i>
+              </a>
+              <a href="#investment" class="btn-hero-text-link">
+                <span>View 10-Yr ROI Model &rarr;</span>
+              </a>
+            </div>
+
           </div>
 
-          <form class="banner-enquiry-form" id="topEnquiryForm">
-            
-            <!-- Full Name -->
-            <div class="form-field-group">
-              <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" placeholder="Enter your full name" required>
-            </div>
+          <!-- Right Column: Luxury Architectural Enquiry Card (In Banner Right Side) -->
+          <div class="ogw-hero-form-col">
+            <div class="hero-enquiry-card" id="topEnquiryCard">
 
-            <!-- Mobile Number -->
-            <div class="form-field-group">
-              <label for="phone">Phone / Mobile</label>
-              <input type="tel" id="phone" placeholder="+995 / International Number" required>
-            </div>
-
-            <!-- Email Address -->
-            <div class="form-field-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="name@domain.com" required>
-            </div>
-
-            <!-- Select Residence Category -->
-            <div class="form-field-group">
-              <label for="residenceType">Residence Category</label>
-              <div class="select-wrapper">
-                <select id="residenceType" required>
-                  <option value="" disabled selected>Select Property Type</option>
-                  <option value="Hillside Villas (104 Units)">Hillside Sanctuary Villas (104 Units)</option>
-                  <option value="Forest Townhouses (80 Units)">Forest Valley Townhouses (80 Units)</option>
-                  <option value="Branded Residences (600 Units)">Branded Residences &amp; Penthouses (600 Units)</option>
-                  <option value="10-Year 8% Guaranteed ROI">10-Year 8% Guaranteed ROI Investment</option>
-                </select>
-                <i class="fa-solid fa-chevron-down arrow-indicator"></i>
+              <div class="form-header-clean">
+                <span class="form-tag">OFFICIAL ALLOCATION</span>
+                <h2 class="form-title">Register Priority Interest</h2>
+                <p class="form-desc">Request floor plans, pricing &amp; 10-year target ROI schedule.</p>
               </div>
+
+              <form class="hero-lead-form" id="topEnquiryForm">
+
+                <!-- Full Name -->
+                <div class="hero-form-group">
+                  <label for="fullName">Full Name</label>
+                  <div class="input-with-icon">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                  </div>
+                </div>
+
+                <!-- Phone / Mobile -->
+                <div class="hero-form-group">
+                  <label for="phone">Phone / Mobile</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="phone" placeholder="+995 / International Number" required>
+                  </div>
+                </div>
+
+                <!-- Email Address -->
+                <div class="hero-form-group">
+                  <label for="email">Email Address</label>
+                  <div class="input-with-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="email" placeholder="name@domain.com" required>
+                  </div>
+                </div>
+
+                <!-- Residence Category -->
+                <div class="hero-form-group">
+                  <label for="residenceType">Residence Category</label>
+                  <div class="input-with-icon select-with-arrow">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <select id="residenceType" required>
+                      <option value="" disabled selected>Select Property Type</option>
+                      <option value="Hillside Villas (104 Units)">Hillside Sanctuary Villas (104 Units)</option>
+                      <option value="Forest Townhouses (80 Units)">Forest Valley Townhouses (80 Units)</option>
+                      <option value="Branded Residences (600 Units)">Branded Residences &amp; Penthouses (600 Units)
+                      </option>
+                      <option value="10-Year 8% Target ROI">10-Year 8% Target ROI Investment</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-hero-submit">
+                  <span>REQUEST PRESENTATION</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <!-- Trust Footprint -->
+                <div class="hero-form-trust">
+                  <span>Direct Developer</span>
+                  <span>&bull;</span>
+                  <span>0% Commission</span>
+                  <span>&bull;</span>
+                  <span>Strict Confidentiality</span>
+                </div>
+
+              </form>
+
             </div>
-
-            <!-- Request Callback Professional Luxury Button -->
-            <button type="submit" class="btn-submit-architectural">
-              <span>REQUEST PRESENTATION</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-
-            <!-- Clean Trust Row -->
-            <div class="form-trust-clean">
-              <span>Direct Developer</span>
-              <span>&bull;</span>
-              <span>0% Commission</span>
-              <span>&bull;</span>
-              <span>Strict Confidentiality</span>
-            </div>
-
-          </form>
+          </div>
 
         </div>
+      </div>
+    </div>
 
+    <!-- Bottom Bar: Scroll Indicator (Left) & Glass Video Capsule (Right) -->
+    <div class="ogw-bottom-bar">
+
+      <!-- Bottom-Left: Minimalist Scroll Pin Indicator -->
+      <a href="#collection" class="ogw-scroll-pin" aria-label="Scroll down to residences">
+        <svg width="22" height="28" viewBox="0 0 24 32" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="4" y="3" width="16" height="26" rx="8" />
+          <line x1="12" y1="8" x2="12" y2="14" stroke-linecap="round" />
+        </svg>
+      </a>
+
+      <!-- Bottom-Right: Frosted Glassmorphism Video Widget -->
+      <div class="ogw-video-capsule" id="tourPlayBtn" role="button" tabindex="0" aria-label="Discover Tbilisi Hills">
+        <div class="capsule-media">
+          <img src="assets/images/clean/evening_pavilion.jpg" alt="Discover Mira Verde">
+          <div class="capsule-play-circle">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+        <div class="capsule-info">
+          <div class="capsule-title">Discover Tbilisi Hills</div>
+          <div class="capsule-desc">Experience Georgia's premier luxury resort living.</div>
+        </div>
       </div>
 
     </div>
-  </section>
+
+  </header>
 
   <!-- =========================================================================
        SECTION 2: SIGNATURE COLLECTION (3 CORE LIVING RESIDENCES)
        ========================================================================= -->
   <section class="section-collection" id="collection">
     <div class="container">
-      
+
       <!-- Section Header -->
       <div class="collection-header">
         <span class="section-eyebrow">THE RESIDENCES</span>
-        <h2>Curated Hillside Living in Tbilisi</h2>
-        <p>Architectural residences designed in harmony with the natural topography of Tbilisi Hills.</p>
+        <h2>Find Your Place in Tbilisi Hills</h2>
       </div>
 
       <!-- 3-Column Grid -->
-      <div class="collection-cards-grid">
-        
+      <div class="collection-cards-grid" role="region" aria-label="Residence options" tabindex="0">
+
         <!-- Card 1: Hillside Villas -->
         <div class="collection-card">
           <div class="card-media-wrapper">
@@ -167,14 +236,12 @@
             <span class="card-category">104 PRIVATE VILLAS</span>
             <h3 class="card-title">Hillside Sanctuary Villas</h3>
             <p class="card-desc">
-              Cantilevered viewing terraces, private gardens, and heated infinity pools with panoramic views overlooking Tbilisi.
+              Private gardens and infinity pools with panoramic city views.
             </p>
             <div class="card-specs-line">
               <span>4 to 6 Bedrooms</span>
               <span>&bull;</span>
               <span>Infinity Pool</span>
-              <span>&bull;</span>
-              <span>100% Freehold</span>
             </div>
             <div class="card-action-bar">
               <a href="#topEnquiryCard" class="card-link-enquire js-scroll-to-enquiry">
@@ -193,14 +260,12 @@
             <span class="card-category">80 TOWNHOUSES</span>
             <h3 class="card-title">Forest Valley Townhouses</h3>
             <p class="card-desc">
-              Low-rise biophilic homes with green planted roofs, floor-to-ceiling glazing, and quiet pedestrian lanes for families.
+              Green-roofed homes beside quiet pedestrian lanes and nature trails.
             </p>
             <div class="card-specs-line">
               <span>3 &amp; 4 Bedrooms</span>
               <span>&bull;</span>
               <span>Nature Trails</span>
-              <span>&bull;</span>
-              <span>European School</span>
             </div>
             <div class="card-action-bar">
               <a href="#topEnquiryCard" class="card-link-enquire js-scroll-to-enquiry">
@@ -219,14 +284,12 @@
             <span class="card-category">600 BRANDED UNITS</span>
             <h3 class="card-title">Branded Residences &amp; Penthouses</h3>
             <p class="card-desc">
-              Turnkey residences and penthouses curated by ELIE SAAB and global fashion houses with five-star hotel concierge.
+              Turnkey branded homes with five-star hotel concierge.
             </p>
             <div class="card-specs-line">
               <span>Turnkey Furnished</span>
               <span>&bull;</span>
               <span>8% Net ROI</span>
-              <span>&bull;</span>
-              <span>Residency Eligible</span>
             </div>
             <div class="card-action-bar">
               <a href="#topEnquiryCard" class="card-link-enquire js-scroll-to-enquiry">
@@ -241,59 +304,48 @@
   </section>
 
   <!-- =========================================================================
-       SECTION 3: INVESTMENT HIGHLIGHTS & 10-YEAR GUARANTEED ROI
+       SECTION 3: INVESTMENT HIGHLIGHTS & 10-YEAR ROI
        ========================================================================= -->
   <section class="section-investment" id="investment">
     <div class="container investment-grid">
-      
+
       <!-- Text & Value Props -->
       <div class="investment-text">
         <span class="section-eyebrow">FINANCIAL SECURITY</span>
-        <h2>10-Year Guaranteed 8% Net ROI</h2>
-        <p class="investment-lead">
-          Mira Verde offers a legally binding 8% guaranteed net annual ROI for 10 years, managed directly by Mira Developments with Georgia's pro-investor fiscal framework.
-        </p>
+        <h2>Target 8% Net ROI Over 10 Years</h2>
 
         <!-- ROI Callout Block -->
         <div class="roi-stat-box">
           <div class="roi-stat-num">8%</div>
           <div class="roi-stat-desc">
-            <strong>Guaranteed Annual Net ROI for 10 Full Years</strong>
-            <span>Direct hotel management distribution &bull; Fully furnished turnkey delivery &bull; Zero landlord hassle</span>
+            <strong>Target Annual Net ROI Over 10 Years</strong>
+            <span>Managed turnkey by Mira Developments</span>
           </div>
         </div>
 
-        <!-- 4 Investment Pillars (Clean, Simple, Professional) -->
+        <!-- Investment Highlights -->
         <div class="investment-pillars-simple">
           <div class="pillar-row">
             <div class="pillar-num">01</div>
             <div class="pillar-info">
               <h4>0% Inheritance Tax</h4>
-              <p>Low overall real estate taxation and straightforward ownership laws in Georgia.</p>
+              <p>No inheritance tax on property.</p>
             </div>
           </div>
 
           <div class="pillar-row">
             <div class="pillar-num">02</div>
             <div class="pillar-info">
-              <h4>20% Capital Appreciation</h4>
-              <p>Consistent year-on-year growth in prime Tbilisi luxury residential property.</p>
+              <h4>100% Freehold Ownership</h4>
+              <p>Full property title for foreign buyers.</p>
             </div>
           </div>
 
           <div class="pillar-row">
             <div class="pillar-num">03</div>
             <div class="pillar-info">
-              <h4>100% Freehold Ownership</h4>
-              <p>Foreign buyers receive full, unrestricted freehold title deeds in their own name.</p>
-            </div>
-          </div>
-
-          <div class="pillar-row">
-            <div class="pillar-num">04</div>
-            <div class="pillar-info">
               <h4>5-Year Mira Care Warranty</h4>
-              <p>Comprehensive developer structural and engineering warranty on all units.</p>
+              <p>Structural and engineering cover.</p>
             </div>
           </div>
         </div>
@@ -306,7 +358,7 @@
         <div class="visual-caption-bar">
           <div class="vc-col">
             <span class="vc-val">8%</span>
-            <span class="vc-lbl">Guaranteed ROI</span>
+            <span class="vc-lbl">Target ROI</span>
           </div>
           <div class="vc-sep"></div>
           <div class="vc-col">
@@ -325,25 +377,23 @@
   </section>
 
   <!-- =========================================================================
-       SECTION 4: MASTER PLAN & GLOBAL BRANDS (SIMPLE EDITORIAL SHOWCASE)
+       SECTION 4: MASTER PLAN & GLOBAL BRANDS
        ========================================================================= -->
   <section class="section-masterplan-compact" id="masterplan">
     <div class="container">
-      
+
       <div class="masterplan-clean-grid">
-        
+
         <!-- Left: Image -->
         <div class="masterplan-media">
-          <img src="assets/images/clean/retail_promenade_night.jpg" alt="Mira Verde Masterplan & Championship Golf Course">
+          <img src="assets/images/clean/retail_promenade_night.jpg"
+            alt="Mira Verde Masterplan & Championship Golf Course">
         </div>
 
         <!-- Right: Content & Amenities -->
         <div class="masterplan-content">
           <span class="section-eyebrow">MASTER PLAN</span>
-          <h2>A Complete Hillside Address</h2>
-          <p>
-            A self-contained sanctuary uniting world-renowned design houses and resort-grade amenities across the hills overlooking Tbilisi:
-          </p>
+          <h2>Resort Living, All in One Place</h2>
 
           <!-- Luxury Brands Row -->
           <div class="masterplan-brands-clean">
@@ -358,12 +408,24 @@
             <span>TECHNOGYM</span>
           </div>
 
-          <!-- Feature Bullets (Clean & Architectural) -->
+          <!-- Feature Bullets -->
           <ul class="masterplan-list-clean">
-            <li><strong>18-Hole Championship Golf Course</strong> &mdash; with private clubhouse and academy</li>
-            <li><strong>6,000 m² Longevity Centre</strong> &mdash; state-of-the-art medical wellness and spa</li>
-            <li><strong>European International School</strong> &mdash; and AI-focused educational campus</li>
-            <li><strong>Five-Star Branded Hotel</strong> &mdash; boutique retail promenade and fine dining</li>
+            <li>
+              <strong>Championship golf</strong>
+              <span class="masterplan-detail">&mdash; 18 holes and private clubhouse</span>
+            </li>
+            <li>
+              <strong>Longevity centre</strong>
+              <span class="masterplan-detail">&mdash; wellness and spa</span>
+            </li>
+            <li>
+              <strong>International school</strong>
+              <span class="masterplan-detail">&mdash; with education campus</span>
+            </li>
+            <li>
+              <strong>Five-star hotel</strong>
+              <span class="masterplan-detail">&mdash; dining and retail</span>
+            </li>
           </ul>
 
           <!-- Action Buttons -->
@@ -390,7 +452,7 @@
        ========================================================================= -->
   <footer class="site-footer-architectural">
     <div class="container footer-clean-inner">
-      
+
       <div class="footer-brand-side">
         <img src="assets/images/inchbrick-logo.png" alt="Inch & Brick Realty" class="footer-logo">
         <span class="footer-brand-note">Mira Verde &bull; Authorized Partner</span>
@@ -403,15 +465,19 @@
     </div>
   </footer>
 
-  <!-- Success Confirmation Modal -->
+  <!-- =========================================================================
+       CONFIRMATION MODAL
+       ========================================================================= -->
   <div class="modal-overlay" id="successModal">
     <div class="modal-box">
       <div class="modal-icon-circle">
         <i class="fa-solid fa-check"></i>
       </div>
-      <h3>Registration Confirmed</h3>
+      <h3>Priority Registration Confirmed</h3>
       <p>
-        Thank you, <span id="modalClientName" style="font-weight: 700; color: #163524;">Valued Client</span>. We have received your priority request for <strong>Mira Verde</strong>. Our Senior Portfolio Advisor will contact you directly with floor plans, master plans, and unit allocations.
+        Thank you, <span id="modalClientName" style="font-weight: 700; color: #163524;">Valued Client</span>. We have
+        received your priority interest for <strong>Mira Verde</strong>. Our Senior Portfolio Advisor will contact you
+        directly with floor plans, master plans, and unit allocations.
       </p>
       <button class="btn-modal-close" id="closeModalBtn">Return to Page</button>
     </div>
@@ -420,4 +486,5 @@
   <!-- Interactive JavaScript -->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>

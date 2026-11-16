@@ -3,34 +3,6 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
-  const mobileToggle = document.getElementById('mobileToggle');
-  const mainNav = document.getElementById('mainNav');
-
-  if (mobileToggle && mainNav) {
-    mobileToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('active');
-      const icon = mobileToggle.querySelector('i');
-      if (icon) {
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-xmark');
-      }
-    });
-
-    // Close menu when clicking nav links
-    const navLinks = mainNav.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mainNav.classList.remove('active');
-        const icon = mobileToggle.querySelector('i');
-        if (icon) {
-          icon.classList.add('fa-bars');
-          icon.classList.remove('fa-xmark');
-        }
-      });
-    });
-  }
-
   // Enquiry Form Handling & Submission
   const enquiryForm = document.getElementById('topEnquiryForm');
   const successModal = document.getElementById('successModal');
@@ -45,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
       const residenceType = document.getElementById('residenceType') ? document.getElementById('residenceType').value : '';
-      const notesEl = document.getElementById('notes');
-      const notes = notesEl ? notesEl.value.trim() : '';
 
       if (!fullName || !email || !phone) {
         alert('Please fill in all required fields.');
@@ -80,19 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Newsletter Form
-  const newsletterForm = document.getElementById('newsletterForm');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const emailInput = newsletterForm.querySelector('.newsletter-input');
-      if (emailInput && emailInput.value.trim()) {
-        alert('Thank you for subscribing to Mira Developments private market updates.');
-        emailInput.value = '';
-      }
-    });
-  }
-
   // Scroll to Top Enquiry Form CTA Buttons
   const scrollToFormButtons = document.querySelectorAll('.js-scroll-to-enquiry');
   scrollToFormButtons.forEach(btn => {
@@ -101,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.getElementById('topEnquiryCard');
       if (target) {
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        // Add subtle pulse highlight effect
+        // Add subtle gold pulse highlight effect
         target.style.transition = 'box-shadow 0.4s ease, transform 0.4s ease';
-        target.style.boxShadow = '0 0 0 3px #b39352, 0 24px 60px rgba(20, 40, 30, 0.25)';
-        target.style.transform = 'scale(1.015)';
+        target.style.boxShadow = '0 0 0 3px #dfc488, 0 24px 60px rgba(20, 40, 30, 0.35)';
+        target.style.transform = 'scale(1.02)';
         setTimeout(() => {
           target.style.boxShadow = '';
           target.style.transform = '';
@@ -116,23 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Tour / Video Play Button
+  // Tour / Video Capsule Click Trigger
   const tourPlayBtn = document.getElementById('tourPlayBtn');
   if (tourPlayBtn) {
     tourPlayBtn.addEventListener('click', () => {
-      alert('Opening Mira Verde Hillside Virtual Tour & Master Plan Animation.');
-    });
-  }
-
-  // Header elevation on scroll (if present)
-  const siteHeader = document.querySelector('.site-header');
-  if (siteHeader) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        siteHeader.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
-      } else {
-        siteHeader.style.boxShadow = 'none';
-      }
+      alert('Opening Mira Verde Tbilisi Hills Virtual Presentation & Master Plan Tour.');
     });
   }
 });
